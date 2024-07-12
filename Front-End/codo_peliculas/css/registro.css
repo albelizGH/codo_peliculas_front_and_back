@@ -1,0 +1,306 @@
+:root {
+	--color_principal: #9f3647;
+	--color_secundario: #2a2a2a;
+	--color_texto: #ffff;
+	--300: #527194;
+	--400: #314459;
+	--500: #10161d;
+	--600: #0d1217;
+	--700: #090d10;
+	--800: #070a0d;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: var(--color_texto);
+}
+
+input,
+button {
+	border: none;
+	outline: none;
+	box-shadow: none;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 3rem;
+	font-weight: 600;
+}
+
+h3 {
+	font-size: 2rem;
+	font-weight: 400;
+}
+
+a {
+	text-decoration: none;
+	color: var(--color_texto);
+	font-family: "Nunito", sans-serif;
+}
+
+body {
+	font-family: "Nunito", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	background-image: url(../img/bg-register.jpg);
+	background-size: contain;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100svh;
+}
+
+body::before {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.854);
+	z-index: -1;
+}
+
+header {
+	background-color: var(--600);
+	height: 5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 50px;
+	position: sticky;
+	top: 0;
+	font-weight: bold;
+	margin-bottom: 1rem;
+	z-index: 10;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.logo h1 {
+	font-size: 25px;
+	font-weight: 600;
+}
+
+.nav-items {
+	display: inline-block;
+	padding: 0.5rem 1rem;
+	font-size: 1rem;
+	border-radius: 5px;
+}
+
+.nav-items:not(:last-child):hover {
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+.nav-items:last-child {
+	background-color: var(--color_principal);
+}
+
+.nav-items:last-child:hover {
+	transform: scale(1.05);
+}
+
+#menu-desplegable {
+	display: none;
+}
+
+.menu-desplegable {
+	width: 100vw;
+	height: 100dvh;
+	position: fixed;
+	z-index: 1;
+	background-color: var(--600);
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-items-m {
+	padding: 1rem 1rem;
+	font-size: 1rem;
+	display: flex;
+	justify-content: center;
+	border-radius: 5px;
+}
+
+.nav-items-m:last-child {
+	background-color: var(--color_principal);
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.registro-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--500);
+	border-radius: 10px;
+	width: 30vw;
+	padding: 4rem 0;
+	width: 60vw;
+	max-width: 700px;
+
+	/* width: 1000px; */
+}
+
+.titulo {
+	width: 100%;
+}
+
+.registro-container-interno {
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1.3rem;
+}
+
+input,
+select {
+	border-radius: 20px;
+	padding: 10px;
+	width: 100%;
+	background-color: var(--500);
+	border: 1px solid var(--color_principal);
+	margin-bottom: 1.3rem;
+}
+
+input::placeholder,
+select {
+	font-size: 0.8rem;
+	color: #7b7474;
+}
+
+select {
+	font-size: 0.8rem;
+	color: #7b7474;
+}
+
+#fecha {
+	color: #7b7474;
+	font-size: 0.8rem;
+}
+
+#email:-webkit-autofill,
+#emailInput:-webkit-autofill:hover,
+#emailInput:-webkit-autofill:focus {
+	background-color: var(--color_secundario);
+}
+
+.terminos {
+	display: flex;
+	justify-content: flex-start;
+	width: 100%;
+	font-size: 0.7rem;
+}
+
+#terminosYCondiciones {
+	width: min-content;
+	margin-inline: 15px;
+	cursor: pointer;
+}
+
+.boton-registro {
+	margin-inline: auto;
+	display: inline-block;
+	width: 100%;
+	padding: 0.7rem;
+	font-size: 1.2rem;
+	background-color: var(--color_principal);
+	text-decoration: none;
+	font-weight: 400;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.ayuda {
+	color: #ffffff7f;
+	font-size: 0.85rem;
+}
+
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	background-color: var(--700);
+	width: 0 auto;
+	min-height: 10vh;
+	margin-top: 1rem;
+}
+
+.footer-links {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+}
+
+.footer-links a {
+	color: var(--color_texto);
+	text-decoration: none;
+	margin: 0 15px;
+	padding: 0.5rem 1rem;
+}
+
+@media screen and (max-width: 900px) {
+	h1 {
+		font-size: 2.5rem;
+	}
+
+	.header-nav {
+		display: none;
+	}
+
+	#menu-desplegable {
+		display: inline-block;
+	}
+
+	.registro-container {
+		width: 90vw;
+	}
+
+	header {
+		padding-inline: 30px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.footer-links {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.footer-links a {
+		margin: 5px 0;
+	}
+}
+
+@media screen and (max-width: 376px) {
+	h1 {
+		font-size: 1.5rem;
+	}
+
+	input::placeholder,
+	select,
+	#fecha {
+		font-size: 1rem;
+	}
+}

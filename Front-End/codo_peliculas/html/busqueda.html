@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Peliculas Codo</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&dbisplay=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../css/busqueda.css" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<script
+			src="https://kit.fontawesome.com/79d92ce098.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+        <div class="menu-desplegable">
+            <nav class="header-nav-m">
+				<ul class="nav-items-padre">
+                    <li class="nav-items-m">
+						<a href="../index.html#busqueda">Buscar</a>
+					</li>
+                    <li class="nav-items-m">
+						<a href="./registro.html">Registrarse</a>
+					</li>
+					<li class="nav-items-m">
+						<a href="./inicio-sesion.html">Iniciar Sesión</a>
+					</li>
+				</ul>
+			</nav>
+        </div>
+		<header>
+			<a class="logo" href="../index.html">
+				<i class="fa fa-solid fa-film fa-2x"></i>
+				<h1 class="logo-h2">AB-Movies</h1>
+			</a>
+
+			<nav class="header-nav">
+				<ul>
+                    <li class="nav-items">
+						<a href="../index.html#busqueda"">Buscar</a>
+					</li>
+					<li class="nav-items">
+						<a href="./registro.html">Registrarse</a>
+					</li>
+					<li class="nav-items"><a href="#">Iniciar Sesión</a></li>
+				</ul>
+			</nav>
+			<i id="menu-desplegable" class="fa fa-bars fa-lg"></i>
+		</header>
+
+
+		<main>
+			<!-- Flecha para subir -->
+			<div class="volver-arriba-container">
+				<a href="#">
+					<i
+						id="volver-arriba"
+						class="fa fa-solid fa-arrow-up fa-lg volver-arriba"
+					></i>
+				</a>
+			</div>
+
+        <section class="section_busqueda">
+            <div class="section-busqueda-container">
+                <div class="buscador">
+                    <input id="buscador" type="text" placeholder="Pelicula" />
+                    <button class="section-busqueda-boton">Buscar</button>
+                </div>
+            </div>
+        </section>
+
+			<section id="tendencias" class="section_tendencias">
+                <div class="titulo-div">
+				<h2 class="title-trends">Resultados</h2>
+                </div>
+				<section class="cont-all-movies">
+                    <!-- Generadas con JS -->
+				</section>
+				<section class="cont-buttons-movies">
+					<button class="button-back">Anterior</button>
+					<button class="button-next">Siguiente</button>
+				</section>
+			</section>
+
+		</main>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-links">
+					<a href="#">T&eacuterminos y condiciones</a>
+					<a href="#">Preguntas frecuentes</a>
+					<a href="#">Ayuda</a>
+					<a href="#" id="terminos_admin">Administrador Peliculas</a>
+				</div>
+			</div>
+		</footer>
+        <script src="../Javascript/menu-desplegable.js"></script>
+        <script src="../Javascript/busqueda.js"></script>
+	</body>
+</html>

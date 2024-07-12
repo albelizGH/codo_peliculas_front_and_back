@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Peliculas Codo - registro</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../css/registro.css" />
+		<script
+			src="https://kit.fontawesome.com/79d92ce098.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	</head>
+	<body>
+		<div class="menu-desplegable">
+			<nav class="header-nav-m">
+				<ul class="nav-items-padre">
+					<li class="nav-items-m">
+						<a href="../index.html#busqueda">Buscar</a>
+					</li>
+					<li class="nav-items-m">
+						<a href="./registro.html">Registrarse</a>
+					</li>
+					<li class="nav-items-m">
+						<a href="./inicio-sesion.html">Iniciar Sesión</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<header>
+			<a class="logo" href="../index.html">
+				<i class="fa fa-solid fa-film fa-2x"></i>
+				<h1 class="logo-h2">AB-Movies</h1>
+			</a>
+			<nav class="header-nav">
+				<ul>
+					<li class="nav-items">
+						<a href="../index.html#busqueda">Buscar</a>
+					</li>
+					<li class="nav-items">
+						<a href="./registro.html">Registrarse</a>
+					</li>
+					<li class="nav-items">
+						<a href="./inicio-sesion.html">Iniciar Sesión</a>
+					</li>
+				</ul>
+			</nav>
+			<i id="menu-desplegable" class="fa fa-bars fa-lg"></i>
+		</header>
+		<main>
+			<div class="registro-container">
+				<div class="registro-container-interno">
+					<div class="titulo">
+						<h1>Registrarse</h1>
+					</div>
+					<form id="registroForm">
+						<input
+							type="text"
+							name="nombre"
+							id="nombre"
+							placeholder="Nombre"
+						/>
+						<input
+							type="text"
+							name="apellido"
+							id="apellido"
+							placeholder="Apellido"
+						/>
+						<input
+							type="email"
+							name="email"
+							id="email"
+							placeholder="Email"
+						/>
+						<input
+							type="password"
+							name="contrasenia"
+							id="password"
+							placeholder="Contraseña"
+						/>
+						<input
+							type="date"
+							name="fechaNacimiento"
+							id="fecha"
+							placeholder="dd/mm/aaaa"
+						/>
+						<select name="pais" id="pais" required>
+							<option value="Argentina">Argentina</option>
+							<option value="Bolivia">Bolivia</option>
+							<option value="Brasil">Brasil</option>
+							<option value="Chile">Chile</option>
+							<option value="Peru">Perú</option>
+							<option value="Venezuela">Venezuela</option>
+							<option value="Ecuador">Ecuador</option>
+						</select>
+						<div class="terminos">
+							<input
+								type="checkbox"
+								name="terminosYCondiciones"
+								id="terminosYCondiciones"
+								required
+							/>
+							<label for="terminosYCondiciones"
+								>Acepto términos y condiciones</label
+							>
+						</div>
+						<button class="boton-registro" type="submit" id="boton-registro">
+							Registrarse
+						</button>
+					</form>
+					<a class="ayuda" href="#">¿Necesitas ayuda?</a>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-links">
+					<a href="#">Términos y condiciones</a>
+					<a href="#">Preguntas frecuentes</a>
+					<a href="#">Ayuda</a>
+					<a href="#" id="terminos_admin">Administrador Peliculas</a>
+				</div>
+			</div>
+		</footer>
+		<script src="../Javascript/validacionCorreo.js"></script>
+		<script src="../Javascript/menu-desplegable.js"></script>
+        <script src="../Javascript/registro.js"></script>
+	</body>
+</html>
